@@ -1,5 +1,9 @@
 add_library(Hash STATIC endian.h crc32.cpp crc32.h digest.cpp hash.h hmac.h keccak.cpp keccak.h md5.cpp md5.h sha1.cpp sha1.h sha256.cpp sha256.h sha3.cpp sha3.h)
 
+if(WIN32)
+	target_include_directories(Hash PRIVATE ${CMAKE_CURRENT_LIST_DIR}/incwin32)
+endif()
+
 target_include_directories(Hash PUBLIC ${CMAKE_CURRENT_LIST_DIR})
 
 if(FORCE_32BIT_BIN)
