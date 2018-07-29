@@ -6,6 +6,7 @@ option(FORCE_32BIT_BIN "Create a 32-bit executable binary if the compiler defaul
 
 # default to c++11 standard
 set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # default to release mode
 set(CMAKE_BUILD_TYPE "Release")
 # include mingw runntime into the binary
