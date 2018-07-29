@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Module" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Win32 Debug Dynamic">
+				<Option platforms="Windows;" />
+				<Option output="../bin/hash-win32" imp_lib="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).a" def_file="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).def" prefix_auto="0" extension_auto="1" />
+				<Option object_output="../obj/win32-d/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O3" />
+					<Add option="-static-libstdc++" />
+					<Add option="-static-libgcc" />
+					<Add option="-enable-static" />
+					<Add option="-DWIN" />
+					<Add option="-D_WIN" />
+					<Add option="-DWIN32" />
+					<Add option="-D_WIN32" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DRELEASE" />
+					<Add option="-D_CONSOLE" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-static" />
+					<Add directory="../lib/mingw32" />
+				</Linker>
+			</Target>
+			<Target title="Win32 Release Dynamic">
+				<Option platforms="Windows;" />
+				<Option output="../bin/hash-win32" imp_lib="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).a" def_file="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).def" prefix_auto="0" extension_auto="1" />
+				<Option object_output="../obj/win32/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O3" />
+					<Add option="-static-libstdc++" />
+					<Add option="-static-libgcc" />
+					<Add option="-enable-static" />
+					<Add option="-DWIN" />
+					<Add option="-D_WIN" />
+					<Add option="-DWIN32" />
+					<Add option="-D_WIN32" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DRELEASE" />
+					<Add option="-D_CONSOLE" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-static" />
+					<Add directory="../lib/mingw32" />
+				</Linker>
+			</Target>
+			<Target title="Win64 Debug Dynamic">
+				<Option platforms="Windows;" />
+				<Option output="../bin/hash-win64" imp_lib="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).a" def_file="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).def" prefix_auto="0" extension_auto="1" />
+				<Option object_output="../obj/win64-d/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O3" />
+					<Add option="-static-libstdc++" />
+					<Add option="-static-libgcc" />
+					<Add option="-enable-static" />
+					<Add option="-DWIN" />
+					<Add option="-D_WIN" />
+					<Add option="-DWIN64" />
+					<Add option="-D_WIN64" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DRELEASE" />
+					<Add option="-D_CONSOLE" />
+					<Add option="-D_SQ64" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-static" />
+					<Add directory="../lib/mingw64" />
+				</Linker>
+			</Target>
+			<Target title="Win64 Release Dynamic">
+				<Option platforms="Windows;" />
+				<Option output="../bin/hash-win64" imp_lib="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).a" def_file="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).def" prefix_auto="0" extension_auto="1" />
+				<Option object_output="../obj/win64/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O3" />
+					<Add option="-static-libstdc++" />
+					<Add option="-static-libgcc" />
+					<Add option="-enable-static" />
+					<Add option="-DWIN" />
+					<Add option="-D_WIN" />
+					<Add option="-DWIN64" />
+					<Add option="-D_WIN64" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DRELEASE" />
+					<Add option="-D_CONSOLE" />
+					<Add option="-D_SQ64" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-static" />
+					<Add directory="../lib/mingw64" />
+				</Linker>
+			</Target>
+			<Target title="Linux32 Debug Dynamic">
+				<Option platforms="Unix;" />
+				<Option output="../bin/hash-linux32" imp_lib="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).a" def_file="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).def" prefix_auto="0" extension_auto="1" />
+				<Option object_output="../obj/linux32-d/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-static-libstdc++" />
+					<Add option="-static-libgcc" />
+					<Add option="-enable-static" />
+					<Add option="-fPIC" />
+					<Add option="-Dlinux" />
+					<Add option="-D__linux" />
+					<Add option="-DDEBUG" />
+					<Add option="-D_DEBUG" />
+					<Add option="-D_CONSOLE" />
+				</Compiler>
+				<Linker>
+					<Add option="-Bstatic" />
+					<Add library="hash-d" />
+					<Add directory="../lib/gcc32" />
+				</Linker>
+			</Target>
+			<Target title="Linux32 Release Dynamic">
+				<Option platforms="Unix;" />
+				<Option output="../bin/hash-linux32" imp_lib="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).a" def_file="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).def" prefix_auto="0" extension_auto="1" />
+				<Option object_output="../obj/linux32/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O3" />
+					<Add option="-static-libstdc++" />
+					<Add option="-static-libgcc" />
+					<Add option="-enable-static" />
+					<Add option="-fPIC" />
+					<Add option="-Dlinux" />
+					<Add option="-D__linux" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DRELEASE" />
+					<Add option="-D_CONSOLE" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-Bstatic" />
+					<Add directory="../lib/gcc32" />
+				</Linker>
+			</Target>
+			<Target title="Linux64 Debug Dynamic">
+				<Option platforms="Unix;" />
+				<Option output="../bin/hash-linux64" imp_lib="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).a" def_file="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).def" prefix_auto="0" extension_auto="1" />
+				<Option object_output="../obj/linux64-d/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-static-libstdc++" />
+					<Add option="-static-libgcc" />
+					<Add option="-enable-static" />
+					<Add option="-fPIC" />
+					<Add option="-Dlinux" />
+					<Add option="-D__linux" />
+					<Add option="-DDEBUG" />
+					<Add option="-D_DEBUG" />
+					<Add option="-D_CONSOLE" />
+					<Add option="-D_SQ64" />
+				</Compiler>
+				<Linker>
+					<Add option="-Bstatic" />
+					<Add library="hash-d" />
+					<Add directory="../lib/gcc64" />
+				</Linker>
+			</Target>
+			<Target title="Linux64 Release Dynamic">
+				<Option platforms="Unix;" />
+				<Option output="../bin/hash-linux64" imp_lib="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).a" def_file="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).def" prefix_auto="0" extension_auto="1" />
+				<Option object_output="../obj/linux64/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O3" />
+					<Add option="-static-libstdc++" />
+					<Add option="-static-libgcc" />
+					<Add option="-enable-static" />
+					<Add option="-fPIC" />
+					<Add option="-Dlinux" />
+					<Add option="-D__linux" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DRELEASE" />
+					<Add option="-D_CONSOLE" />
+					<Add option="-D_SQ64" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-Bstatic" />
+					<Add directory="../lib/gcc64" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-std=c++11" />
+			<Add directory="../include" />
+			<Add directory="../source" />
+			<Add directory="../external/B64" />
+			<Add directory="../external/Hash" />
+			<Add directory="../external/Whirlpool" />
+		</Compiler>
+		<Unit filename="../external/B64/decode.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../external/B64/encode.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../external/Hash/crc32.cpp" />
+		<Unit filename="../external/Hash/crc32.h" />
+		<Unit filename="../external/Hash/digest.cpp" />
+		<Unit filename="../external/Hash/hash.h" />
+		<Unit filename="../external/Hash/hmac.h" />
+		<Unit filename="../external/Hash/keccak.cpp" />
+		<Unit filename="../external/Hash/keccak.h" />
+		<Unit filename="../external/Hash/md5.cpp" />
+		<Unit filename="../external/Hash/md5.h" />
+		<Unit filename="../external/Hash/sha1.cpp" />
+		<Unit filename="../external/Hash/sha1.h" />
+		<Unit filename="../external/Hash/sha256.cpp" />
+		<Unit filename="../external/Hash/sha256.h" />
+		<Unit filename="../external/Hash/sha3.cpp" />
+		<Unit filename="../external/Hash/sha3.h" />
+		<Unit filename="../external/Whirlpool/byte_order.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../external/Whirlpool/whirlpool.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../external/Whirlpool/whirlpool_sbox.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../source/Functions.cpp" />
+		<Unit filename="../source/Functions.h" />
+		<Unit filename="../source/main.cpp" />
+		<Unit filename="../source/main.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
