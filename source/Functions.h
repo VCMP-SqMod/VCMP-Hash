@@ -1,6 +1,7 @@
+#pragma once
+
 #include "main.h"
 #include "SQModule.h"
-#pragma once
 
 extern HSQUIRRELVM v;
 
